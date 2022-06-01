@@ -1,0 +1,31 @@
+<button type="button" (click)="getAirline()">Get List of Airlines</button><br>;
+<br>
+<br>
+<br>
+
+<table border="1">
+    <tr>
+        
+        <td>Airline</td>
+        <td>Flight_no</td>
+        <td>IsActive</td>
+        
+        
+       
+    </tr>
+    <tr *ngFor="let item of data">
+    
+    
+    <td>{{item.airline}}</td>
+    <td>{{item.flightno}}</td>
+    <td>{{item.isActive}}</td>
+    
+    <button type="button" (click)="Block(item.airline)">Block</button><br>
+    
+    
+</tr>
+</table>
+
+
+
+<div>{{data1}}></div>

@@ -1,0 +1,49 @@
+<form>
+<p>
+<label>Name:</label>
+<input #name text="text"   id="name"><br>
+</p>
+<p>
+<label>Emailid:</label>
+<input #Emailid text="text"   id="Emailid"><br>
+</p>
+<p>
+<label>Nos:</label>
+<input #Nos text="text"   id="Nos"><br>
+</p>
+<p>
+<label>Name:</label>
+<input #Name text="text"   id="Name"><br>
+</p>
+<p>
+<label>Gender:</label>
+<select #Gender name="Gender" id="Gender">
+    <option value="select">select</option>
+    <option value="female">Female</option>
+    <option value="male">male</option>   
+</select>
+
+</p>
+<p>
+<label>Meal:</label>
+<select #Meal name="Gender" id="Gender">
+    <option value="select">select</option>
+    <option value="veg">veg</option>
+    <option value="non-veg">non-veg</option>   
+</select>
+</p>
+<p>
+<label>Age:</label>
+<input #Age text="text"   id="Meal"><br>
+</p>
+<p>
+<label>Seat_no:</label>
+<input #Seat_no text="text"   id="Seat_no"><br>
+</p>
+
+</form>
+<button type="button" class="button" (click)="Booking(name.value,Emailid.value,Nos.value,
+Name.value,Gender.value,Age.value,Meal.value,
+Seat_no.value)">Booking</button>;
+
+

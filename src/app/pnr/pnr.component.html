@@ -1,0 +1,22 @@
+PNR: <input #PNR text="text"   id="PNR"><br>
+<button type="button" class="button" (click)="getdetailsbyPNR(PNR.value)">PNR</button>;
+
+<table border="1">
+    <tr>
+        <td>Emailid</td>
+        <td>Number of seats</td>
+        <td>Name</td>
+        <td>FlightNo</td>
+        <td>PNR</td>
+       
+    </tr>
+    <tr *ngFor="let item of data2">
+    <td>{{item.emailid}}</td>
+    <td>{{item.nos}}</td>
+    <td>{{item.rName}}</td>
+    <td>{{item.flightno}}</td>
+    <td>{{item.pnR_number}}</td>
+</tr>
+</table>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,70 @@
+<html>
+    <body>
+<form>
+    <p>
+<label>DeparturePlace:</label>
+<input #from_place text="text"   id="from">
+</p>
+<p>
+<label>ArrivalPlace:</label>
+<input #to_place text="text"   id="to"><br>
+</p>
+<p>
+<label>StartTime:</label>
+<input #startdate text="text"   id="start"><br>
+</p>
+<p>
+<label>EndTime:</label>
+<input #Enddate text="text"   id="end"><br>
+</p>
+<p>
+<label>Scheduledays:</label>
+<input #scheduledays text="text" id="scheduledays"><br>
+</p>
+<p>
+<label>Instrument_used:</label>
+<input #Instrument text="text"   id="instrument"><br>
+</p>
+<p>
+<label>Business_seats:</label>
+<input #business text="text"   id="business"><br>
+</p>
+<p>
+<label>Non-business_seats:</label>
+<input #non_business text="text"   id="non_bus"><br>
+</p>
+<p>
+<label>Cost:</label>
+<input #cost text="text"   id="cost"><br>
+</p>
+<p>
+
+<label>Rows:</label>
+<input #rows text="text"   id="rows"><br>
+</p>
+<p>
+<label>Meal:</label>
+<input #meal text="text"   id="meal"><br>
+</p>
+<p>
+<label>Flight_number:</label>
+<input #Flightno text="text"   id="flight_no"><br>
+</p>
+<p>
+<label>Airline:</label>
+<input #Airline text="text"   id="airline"><br>
+</p>
+<p>
+<label>IsActive:</label>
+<input #isActive text="text"   id="isactive"><br>
+</p>
+</form>
+</body>
+</html>
+<button type="button" class="button" (click)="AddAirline(from_place.value,to_place.value,startdate.value,
+Enddate.value,scheduledays.value,Instrument.value,business.value,
+non_business.value,cost.value,rows.value,meal.value,Flightno.value,
+Airline.value,isActive.value)">Add Airline</button>
+
+<h3>{{data}}</h3>
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<form>
+    <p>
+<label>DeparturePlace</label>
+<input #dept text="text"   id="dept"><br>
+</p>
+<p>
+<label>ArrivalPlace</label>
+<input #arr text="text"   id="arr"><br>
+</p>
+<button type="button" (click)="getUsersSearchFlight(dept.value,arr.value)">SearchFlight</button><br>
+</form>
+<br>
+<br>
+
+<table border="1">
+    <tr>
+        <td>Airline</td>
+        <td>Flight_no</td>
+        <td>StartTime</td>
+        <td>EndTime</td>
+        <td>Cost</td>
+       
+    </tr>
+    <tr *ngFor="let item of data">
+    <td>{{item.airline}}</td>
+    <td>{{item.flightno}}</td>
+    <td>{{item.startdatetime}}</td>
+    <td>{{item.endDateTime}}</td>
+    <td>{{item.cost}}</td>
+</tr>
+</table>
+<br>
+<br>
+<br>
+<br>
+<form>
+<p>
+<label>Date:</label>
+<input #startdate text="text" id="startdate"><br>
+</p>
+</form>
+<button type="button" (click)="getUsersSearchFlightbydate(startdate.value)">SearchFlight</button>
+<br>
+<br>
+<table border="1">
+    <tr>
+        <td>Airline</td>
+        <td>Flight_no</td>
+        <td>StartTime</td>
+        <td>EndTime</td>
+        <td>Cost</td>
+       
+    </tr>
+    <tr *ngFor="let item of data1">
+    <td>{{item.airline}}</td>
+    <td>{{item.flightno}}</td>
+    <td>{{item.startdatetime}}</td>
+    <td>{{item.endDateTime}}</td>
+    <td>{{item.cost}}</td>
+</tr>
+</table>
+
+
+  
+
+<router-outlet></router-outlet>
